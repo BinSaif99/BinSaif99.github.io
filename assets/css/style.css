@@ -4,8 +4,12 @@
  Version: 1.0.0
  */
 /*Google Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap");*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@300&family=Ubuntu:ital,wght@1,700&display=swap');
+
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap");*/
 /*--------------------------------------------------------------
 >> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -41,7 +45,7 @@ body,
 html {
   color: #a9adb8;
   background-color: #0a101e;
-  font-family: 'Inter', sans-serif;
+  font-family: "Lora", serif !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6em;
@@ -600,11 +604,11 @@ hr {
   }
   .st-nav .st-nav-list > li > a {
     padding: 15px 0;
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
     color: #fdfeff;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    text-transform: unset;
+    font-family: 'Montserrat', sans-serif;;
     font-weight: 500;
   }
   .st-nav .st-nav-list > li > a.active {
@@ -1020,7 +1024,8 @@ hr {
 }
 
 .st-hero.st-style2 h1 {
-  font-size: 60px;
+  font-family: "Alata", sans-serif;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -1030,6 +1035,7 @@ hr {
 }
 
 .st-hero.st-style2 p {
+  font-family: "Alata", serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6em;
@@ -1155,8 +1161,10 @@ canvas {
 
 /* ANIMATIONS */
 .x1 {
-  -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-          animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 25s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 25s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
   left: -5%;
   top: 5%;
   -webkit-transform: scale(0.6);
@@ -1164,8 +1172,10 @@ canvas {
 }
 
 .x2 {
-  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-          animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 20s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 20s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
   left: 5%;
   top: 80%;
   -webkit-transform: scale(0.4);
@@ -1173,8 +1183,10 @@ canvas {
 }
 
 .x3 {
-  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-          animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 28s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 28s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
   left: 10%;
   top: 40%;
   -webkit-transform: scale(0.7);
@@ -1182,8 +1194,10 @@ canvas {
 }
 
 .x4 {
-  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-          animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 22s linear infinite,
+ sideWays 3s ease-in-out infinite alternate;
+          animation: animateBubble 22s linear infinite,
+ sideWays 3s ease-in-out infinite alternate;
   left: 20%;
   top: 0;
   -webkit-transform: scale(0.3);
@@ -1191,8 +1205,10 @@ canvas {
 }
 
 .x5 {
-  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-          animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 29s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 29s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
   left: 30%;
   top: 50%;
   -webkit-transform: scale(0.5);
@@ -1200,8 +1216,10 @@ canvas {
 }
 
 .x6 {
-  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-          animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 21s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 21s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
   left: 50%;
   top: 0;
   -webkit-transform: scale(0.8);
@@ -1209,8 +1227,10 @@ canvas {
 }
 
 .x7 {
-  -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-          animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 20s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 20s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
   left: 65%;
   top: 70%;
   -webkit-transform: scale(0.4);
@@ -1218,8 +1238,10 @@ canvas {
 }
 
 .x8 {
-  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-          animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 22s linear infinite,
+ sideWays 3s ease-in-out infinite alternate;
+          animation: animateBubble 22s linear infinite,
+ sideWays 3s ease-in-out infinite alternate;
   left: 80%;
   top: 10%;
   -webkit-transform: scale(0.3);
@@ -1227,8 +1249,10 @@ canvas {
 }
 
 .x9 {
-  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-          animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 29s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 29s linear infinite,
+ sideWays 4s ease-in-out infinite alternate;
   left: 90%;
   top: 50%;
   -webkit-transform: scale(0.6);
@@ -1236,8 +1260,10 @@ canvas {
 }
 
 .x10 {
-  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-          animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: animateBubble 26s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 26s linear infinite,
+ sideWays 2s ease-in-out infinite alternate;
   left: 80%;
   top: 80%;
   -webkit-transform: scale(0.3);
@@ -1483,12 +1509,14 @@ canvas {
 }
 
 .st-text-block.st-style1 .st-text-block-title {
+  font-family: "Alata", sans-serif;
   font-size: 36px;
   font-weight: 400;
   margin-bottom: 18px;
 }
 
 .st-text-block.st-style1 .st-text-block-subtitle {
+  font-family: "Alata", sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #fec544;
@@ -1496,14 +1524,17 @@ canvas {
 }
 
 .st-text-block.st-style1 .st-text-block-text p {
+  font-family: "Alata", sans-serif;
   margin-bottom: 18px;
 }
 
 .st-text-block.st-style1 .st-text-block-btn {
+  font-family: "Alata", sans-serif;
   margin-top: 43px;
 }
 
 .st-text-block-details li {
+  font-family: "Alata", sans-serif;
   margin-bottom: 14px;
 }
 
