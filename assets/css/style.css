@@ -2849,7 +2849,7 @@ canvas {
 }
 
 .st-contact-title {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   margin-top: -6px;
   margin-bottom: 22px;
@@ -2974,6 +2974,7 @@ canvas {
   font-size: 20px;
   font-weight: 500;
   padding-top: 5px;
+  text-align: center;
 }
 
 .st-social-link {
