@@ -1783,7 +1783,7 @@ canvas {
 .st-portfolio::after {
   content: "";
   position: absolute;
-  border: 1px solid #fdfeff;
+  border: 1px solid #ffffff;
   width: 90%;
   height: 90%;
   top: 50%;
@@ -2242,8 +2242,9 @@ canvas {
 }
 
 .st-page-heading-title {
-  color: #fff;
-  font-size: 48px;
+  color: #fec544;
+  text-shadow: -1px -1px #000000;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 7px;
 }
