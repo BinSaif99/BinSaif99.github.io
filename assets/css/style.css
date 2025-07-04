@@ -1565,8 +1565,8 @@ canvas {
 /*.....CUSTOM CSS....*/
 
 body {
-    font-family: 'Lora', serif; /* Changed font-family to Lora, serif */
-    background-color: #121212; /* Darker background to match image */
+    font-family: 'Alata', sans-serif; /* Changed font-family to Lora, serif */
+    background-color: #A9ADB8; /* Darker background to match image */
     color: #e0e0e0; /* Slightly lighter text color */
 }
 /* Custom styles for the icon boxes */
