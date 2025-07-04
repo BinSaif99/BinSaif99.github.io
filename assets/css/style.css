@@ -1561,6 +1561,33 @@ canvas {
 /*--------------------------------------------------------------
 10. Icon box
 ----------------------------------------------------------------*/
+
+/*.....CUSTOM CSS....*/
+
+body {
+    font-family: 'Lora', serif; /* Changed font-family to Lora, serif */
+    background-color: #121212; /* Darker background to match image */
+    color: #e0e0e0; /* Slightly lighter text color */
+}
+/* Custom styles for the icon boxes */
+.st-iconbox-icon svg {
+    fill: currentColor; /* Makes SVG fill color inherit from parent text color */
+    transition: fill 0.3s ease-in-out; /* Smooth transition for SVG fill */
+}
+.st-iconbox-title {
+    transition: color 0.3s ease-in-out; /* Smooth transition for title color */
+}
+/* Hover effect for the entire iconbox */
+.st-iconbox:hover .st-iconbox-icon svg,
+.st-iconbox:hover .st-iconbox-title {
+    fill: #fec544; /* Icon color on hover */
+    color: #fec544; /* Title color on hover */
+}
+
+/*.....CUSTOM CSS....*/
+
+
+
 .st-iconbox.st-style1 {
   text-align: center;
   padding: 0.10px 0.10px;
