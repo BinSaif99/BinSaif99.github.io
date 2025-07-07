@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Meta Tags -->
   <meta charset="utf-8">
@@ -13,88 +12,48 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/fotor-2025070454319.png" />
   <!-- Stylesheets -->
-   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.css" />
   <link rel="stylesheet" href="assets/css/slick.css" />
   <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  
-  <!-- Google Fonts: Alata -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-
   <style>
-    /* Custom styles for the modal */
+    /* Custom styles for the modal backdrop */
     .modal-backdrop {
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
     }
     .modal-content {
-        animation: zoomIn 0.3s ease-out;
-        background-color: #222222; /* Dark background for the modal */
-        border: 1px solid #333;
-    }
-    @keyframes zoomIn {
-        from { opacity: 0; transform: scale(0.9); }
-        to { opacity: 1; transform: scale(1); }
-    }
-    /* Header Fix */
-    .st-main-header-in {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    .st-main-header-right .st-nav {
-      display: flex;
-      align-items: center;
-    }
-    .st-nav-list {
-      display: flex;
-      gap: 30px; 
-    }
-    .sp-phone {
-      margin-left: 30px;
-      padding-left: 30px;
-      border-left: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .st-page-heading {
-      height: 300px;
-      background-size: cover;
-      background-position: center;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
     }
   </style>
-
 </head>
 
-<body id="home">
+<body id="home" class="st-get-sidebar">
   <!-- Start Header Section -->
-  <header class="st-site-header st-style1 st-sticky-header">
+  <header class="st-site-header st-style2 st-sticky-header">
     <div class="st-main-header">
       <div class="container">
         <div class="st-main-header-in">
           <div class="st-main-header-left">
-            <a class="st-site-branding" href="index.html"><img src="assets/img/logo.png" alt="Davis"></a>
+            <div class="st-header-author"><img src="assets/img/section/resz.jpg" alt=""></div>
           </div>
           <div class="st-main-header-right">
             <div class="st-nav">
               <ul class="st-nav-list st-onepage-nav">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#resume">Career</a></li>
-                <li><a href="index.html#portfolio">Projects</a></li>
-                <li><a href="index.html#blog">Publications</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#home" class="st-smooth-move">Home</a></li>
+                <li><a href="#about" class="st-smooth-move">About</a></li>
+                <li><a href="#resume" class="st-smooth-move">Career</a></li>
+                <li><a href="#portfolio" class="st-smooth-move">Projects</a></li>
+                <li><a href="#blog" class="st-smooth-move">Publications</a></li>
+                <li><a href="#contact" class="st-smooth-move">Contact</a></li>
               </ul>
-              <div class="sp-phone">
-                
-              <a href="mailto: alifbinsaif@gmail.com" target="_blank" class="st-social-btn">
-                <span class="st-social-icon"><i class="fas fa-envelope"></i></span>
-                <span class="sp-phone-no">alifbinsaif@gmail.com</span>
-              </a>
+              <div class="st-hero-btn">
+                <a href="https://drive.google.com/drive/folders/1VAOmLnukhoBPVcr9p9w0s-7oDHhf3As0?usp=share_link"
+                  target="_blank" class="st-btn st-style2 st-color1 st-btn-md st-smooth-move">Resume</a>
               </div>
             </div>
           </div>
@@ -104,19 +63,135 @@
   </header>
   <!-- End Header Section -->
 
- <div class="st-content">
-    <div class="st-page-heading st-dynamic-bg" data-src="assets/img/project_cover1.gif">
-      <div class="container">
-        <div class="st-page-heading-in text-center">
-          <h1 class="st-page-heading-title">Welcome ✨ <br>You can find all of my completed projects here.</h1>
-          <div class="st-post-label">
-            <span>By <a href="https://github.com/BinSaif99" target="_blank"><b>BinSaif</b></a>.</span>
-            <!--span>Mar 15, 2020</span-->
+  <!-- Start Hero Seciton -->
+  <section class="st-hero st-style2">
+    <div class="container">
+      <div class="st-hero-text">
+        <p><b>Greetings ✨ I am</b></p>
+        <h1> <span>Alif Bin Saif</span></h1>
+        <p>Competitive Programmer, Researcher, Tech Enthusiast. <br>I am open to any Research Collaborations. Please
+          reach out if you have anything to discuss or want to work together.</p>
+
+        <div class="st-social-info">
+          <br>
+          <div class="st-social-link">
+            <a href="https://www.linkedin.com/in/binsaif99/" target="_blank" class="st-social-btn">
+              <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+              <span class="st-icon-name">LinkedIn</span>
+            </a>
+            <a href="https://github.com/BinSaif99" target="_blank" class="st-social-btn">
+              <span class="st-social-icon"><i class="fab fa-github"></i></span>
+              <span class="st-icon-name">Github</span>
+            </a>
+            <a href="https://dev.to/binsaif" target="_blank" class="st-social-btn active">
+              <span class="st-social-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M8.4 15q.475 0 .813-.338t.337-.812v-3.7q0-.475-.338-.813T8.4 9H6.75q-.325 0-.537.213T6 9.75v4.5q0 .325.213.537T6.75 15H8.4Zm-1.25-1.15v-3.7H8.4v3.7H7.15ZM10.875 15l1.9-.025q.225 0 .388-.163t.162-.412q0-.225-.162-.388t-.388-.162h-1.5v-1.3H12q.25 0 .413-.163t.162-.412q0-.25-.162-.412T12 11.4h-.725v-1.25h1.475q.25 0 .413-.163t.162-.412q0-.25-.162-.412T12.75 9h-1.875q-.325 0-.537.213t-.213.537v4.5q0 .325.213.537t.537.213Zm5.15-.025q.325 0 .563-.213t.312-.537l1.2-4.5q.075-.275-.1-.5T17.55 9q-.2 0-.363.113t-.212.312l-.95 3.675l-.975-3.675q-.05-.2-.2-.313T14.5 9q-.275 0-.45.225t-.1.5l1.2 4.5q.075.325.313.537t.562.213ZM5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm0-2h14V5H5v14ZM5 5v14V5Z" />
+                  </svg></i></span>
+              <span class="st-icon-name">DEV</span>
+            </a>
+            <a href="mailto: alifbinsaif@gmail.com" target="_blank" class="st-social-btn">
+              <span class="st-social-icon"><i class="fas fa-envelope"></i></span>
+              <span class="st-icon-name">Email</span>
+            </a>
+            <a href="https://linktr.ee/binsaif" target="_blank" class="st-social-btn">
+              <span class="st-social-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 24 24">
+                    <path fill="gray"
+                      d="m13.736 5.853l4.005-4.117l2.325 2.38l-4.2 4.005h5.908v3.305h-5.937l4.229 4.108l-2.325 2.334l-5.74-5.769l-5.741 5.769l-2.325-2.325l4.229-4.108H2.226V8.121h5.909l-4.2-4.004l2.324-2.381l4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z" />
+                  </svg></i></span>
+              <span class="st-icon-name">LinkTree</span>
+            </a>
           </div>
         </div>
       </div>
-    </div><!-- .st-page-heading -->
-      <!-- Start Projects Seciton -->
+    </div>
+    <div id="background-wrap">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9"></div>
+      <div class="bubble x10"></div>
+    </div>
+    <div id="particles-js"></div>
+  </section>
+  <!-- End Hero Seciton -->
+
+  <!-- Start About Seciton -->
+  <section id="about" class="st-about-wrap">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">ABOUT ME</h4>
+        <h2 class="st-section-heading-subtitle">ABOUT ME</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 wow fadeInLeft">
+          <div class="st-about-img-wrap">
+            <div class="st-about-img st-dynamic-bg st-bg" data-src="assets/img/section/saif_about1.jpg"></div>
+          </div>
+          <div class="st-height-b0 st-height-lg-b30"></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="st-vertical-middle">
+            <div class="st-vertical-middle-in">
+              <div class="st-text-block st-style1">
+                <h2 class="st-text-block-title">Hi There! I'm Alif Bin Saif</h2>
+                <p class="st-text-block-subtitle">Competitive Programmer | Researcher | Tech Enthusiast</p>
+                <div class="st-text-block-text">
+                  <p>
+                    I’m a passionate and self-driven Computer Science graduate (B.Sc. in CSE) from
+                    <a href="https://www.aust.edu/" target="_blank">
+                      <b><u>Ahsanullah University of Science and Technology (AUST)</u></b>
+                    </a>, Dhaka, Bangladesh, with a strong ambition to build a dynamic career as both a software
+                    engineer and a researcher.
+                  </p>
+                  <p>
+                    Fueled by curiosity and a love for solving complex problems, I actively engage in competitive
+                    programming—not just as a skill, but as a mindset that sharpens my ability to debug, think
+                    critically, and innovate.
+                  </p>
+                  <p>
+                    I thrive in challenging environments that demand strong problem-solving, time management, and
+                    interpersonal communication skills. I’m currently seeking a full-time opportunity that allows me to
+                    grow technically while making meaningful contributions.
+                  </p>
+                  <p>
+                    I'm also enthusiastic about research collaborations—if you’re exploring innovative ideas or want to
+                    connect on a project, feel free to reach out. Let’s build something impactful together.
+                  </p>
+
+                </div>
+                <ul class="st-text-block-details st-mp0">
+                  <li><span>Email</span> : <span><a href="mailto: alifbinsaif@gmail.com" target="_blank">
+                        <b><u> alifbinsaif@gmail.com </u></b>
+                      </a></span></li>
+                  <li><span>From</span> : <span>Dhaka, Bangladesh</span></li>
+                  <li><span>Language</span> : <span>English, Bangla, Hindi</span></li>
+                </ul>
+                <div class="st-text-block-btn">
+                  <a href="https://drive.google.com/drive/folders/1VAOmLnukhoBPVcr9p9w0s-7oDHhf3As0?usp=share_link"
+                    target="_blank" class="st-btn st-style1 st-color1">Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Seciton -->
+  
+  <!-- Projects Section -->
   <section id="portfolio">
     <div class="st-height-b100 st-height-lg-b80"></div>
     <div class="container">
@@ -134,7 +209,6 @@
               <a href="#" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData1);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/rent_buddy.jpg" alt="Rent Buddy">
-
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
                     <h5>Rent Buddy</h5>
@@ -154,7 +228,7 @@
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
                     <h5>Payroll Management System</h5>
-                    <p>A Java application developed using JavaFX and Swing for managing payrol systems.</p>
+                    <p>A Java application for managing payroll systems.</p>
                   </div>
                 </div>
               </a>
@@ -169,8 +243,8 @@
                   <img src="assets/img/portfolio/euphoria.jpg" alt="Euphoria">
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
-                    <h5> Euphoria </h5>
-                    <p>An Android music app offering seamless music streaming and personalized playlists.</p>
+                    <h5>Euphoria</h5>
+                    <p>An Android music app for seamless streaming.</p>
                   </div>
                 </div>
               </a>
@@ -185,8 +259,8 @@
                   <img src="assets/img/portfolio/AS_ACADEMY.jpg" alt="AS Academy">
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
-                    <h5> AS Academy </h5>
-                    <p>A dynamic e-learning platform integrating various web technologies.</p>
+                    <h5>AS Academy</h5>
+                    <p>A dynamic e-learning platform.</p>
                   </div>
                 </div>
               </a>
@@ -202,7 +276,7 @@
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
                     <h5>Library Management System</h5>
-                    <p>A Java-based application for managing library resources and operations.</p>
+                    <p>A Java-based application for library management.</p>
                   </div>
                 </div>
               </a>
@@ -217,8 +291,8 @@
                   <img src="assets/img/portfolio/aust_galaxy_dash.jpg" alt="AUST GALAXY DASH">
                   <div class="st-portfolio-item-hover">
                     <i class="fas fa-plus-circle"></i>
-                    <h5>AUST GALAXY DASH </h5>
-                    <p>A fun and exciting game built with the Igraphics programming language.</p>
+                    <h5>AUST GALAXY DASH</h5>
+                    <p>A game built with the Igraphics programming language.</p>
                   </div>
                 </div>
               </a>
@@ -227,7 +301,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <div class="st-portfolio-btn">
-            <a href="index.html#portfolio" class="st-btn st-style1 st-color1">Back</a>
+            <a href="#" class="st-btn st-style1 st-color1">Load More</a>
           </div>
         </div>
       </div>
@@ -235,130 +309,203 @@
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Portfolio Seciton -->
-  
-  <!-- Start Footer Seciton -->
-  <footer>
-    <div class="container">
-      <div class="st-copyright-wrap text-center">
-        <div class="st-copyright-text">© 2023. Designed by <a href="https://binsaif99.github.io/" target="_blank"><b>BinSaif</b></a>. All right reserved.</div>
+
+  <!-- Other sections (reviews, blog, contact, footer) would go here -->
+  <!-- ... -->
+
+  <!-- =================================================================== -->
+  <!-- START: MODAL CODE -->
+  <!-- =================================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
+    <!-- Modal Content -->
+    <div class="modal-content rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto relative">
+      <!-- Close Button -->
+      <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+          <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path>
+          <path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path>
+          <path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+        </svg>
+      </button>
+
+      <!-- Modal Body -->
+      <div class="p-2">
+        <div class="w-full h-64 md:h-80 overflow-hidden rounded-xl">
+          <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <p>By <span id="modal-author" class="font-medium text-[#fec544]"></span></p>
+            <span class="mx-2">&bull;</span>
+            <p id="modal-date"></p>
+          </div>
+          <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-white mb-4"></h3>
+          <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
+
+          <!-- Container for Technical Skills -->
+          <div id="modal-skills-container">
+            <!-- Dynamic skills will be injected here by JavaScript -->
+          </div>
+
+          <!-- Social Share Buttons -->
+          <div class="flex items-center space-x-3 mt-8">
+            <p class="text-sm font-medium text-gray-200">Share:</p>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-blue-400 hover:text-white transition-all duration-300">
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- End Footer Seciton -->
-
-<!-- =================================================================== -->
-<!-- START: MODAL CODE -->
-<!-- =================================================================== -->
-
-<!-- Modal Container (initially hidden) -->
-<!-- Z-INDEX FIX: Changed z-50 to z-[9999] to ensure the modal appears above the sticky header -->
-<div id="project-modal" class="fixed inset-0 z-[9999] flex items-center justify-center p-4 modal-backdrop hidden">
-    <!-- Modal Content -->
-    <div class="modal-content rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
-        <!-- CLOSE BUTTON FIX: Moved button here with corrected positioning -->
-        <div class="absolute top-0 right-0 pt-4 pr-4 z-10">
-            <div class="relative w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition-colors duration-300">
-                <button id="close-modal-btn" class="text-gray-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6 6 18"/>
-                        <path d="m6 6 12 12"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Modal Body -->
-        <div class="p-2">
-            <div class="w-full h-64 md:h-80 overflow-hidden rounded-xl">
-                <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 md:p-8">
-                <div class="flex items-center text-sm text-gray-400 mb-3">
-                    <p>By <span id="modal-author" class="font-medium text-[#fec544]"></span></p>
-                    <span class="mx-2">&bull;</span>
-                    <p id="modal-date"></p>
-                </div>
-                <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-white mb-4"></h3>
-                <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
-
-                <!-- Social Share Buttons -->
-                <div class="flex items-center space-x-3">
-                    <p class="text-sm font-medium text-gray-200">Share:</p>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-blue-500 hover:text-white transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dribbble"><circle cx="12" cy="12" r="10" /><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" /><path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" /><path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" /></svg>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-behance"><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" /><path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" /><path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" /></svg>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-sky-600 hover:text-white transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- =================================================================== -->
-<!-- END: MODAL CODE -->
-<!-- =================================================================== -->
+  </div>
+  <!-- =================================================================== -->
+  <!-- END: MODAL CODE -->
+  <!-- =================================================================== -->
 
 
   <script>
     // --- DATA FOR THE MODAL ---
+    // Each project has its own data object, including a 'skills' object.
     const projectData1 = {
       image: 'assets/img/portfolio/rent_buddy.jpg',
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
       title: 'Rent Buddy',
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.'
+      fullText: 'A smart vehicle rental system designed for tourists, built with the ASP.NET framework. This application provides a seamless booking experience, real-time vehicle tracking, and secure payment processing, ensuring a hassle-free rental process for users.',
+      skills: {
+        languages: ['C#', 'HTML5', 'CSS3', 'JavaScript'],
+        frameworks: ['ASP.NET', 'Bootstrap'],
+        database: ['MSSQL'],
+        tools: ['Microsoft Visual Studio', 'Git']
+      }
     };
+
     const projectData2 = {
       image: 'assets/img/portfolio/payroll_MS.jpg',
       author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
+      date: 'June 20, 2025',
       title: 'Payroll Management System',
-      fullText: 'A Java application developed using JavaFX and Swing for managing payroll systems.'
-    };
-    const projectData3 = {
-      image: 'assets/img/portfolio/euphoria.jpg',
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Euphoria',
-      fullText: 'An Android music app offering seamless music streaming and personalized playlists.'
-    };
-    const projectData4 = {
-      image: 'assets/img/portfolio/AS_ACADEMY.jpg',
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'AS Academy',
-      fullText: 'A dynamic e-learning platform integrating various web technologies.'
-    };
-    const projectData5 = {
-      image: 'assets/img/portfolio/Library_MS.jpg',
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Library Management System',
-      fullText: 'A Java-based application for managing library resources and operations.'
-    };
-    const projectData6 = {
-      image: 'assets/img/portfolio/aust_galaxy_dash.jpg',
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'AUST GALAXY DASH',
-      fullText: 'A fun and exciting game built with the Igraphics programming language.'
+      fullText: 'A robust desktop application developed using Java for managing employee payroll. It features modules for employee data management, salary calculation, tax processing, and report generation, all within an intuitive user interface built with JavaFX and Swing.',
+      skills: {
+        languages: ['Java'],
+        frameworks: ['JavaFX', 'Swing'],
+        database: ['MySQL'],
+        tools: ['NetBeans', 'Scene Builder']
+      }
     };
 
-    // --- DOM ELEMENTS (SIMPLIFIED) ---
+    const projectData3 = {
+        image: 'assets/img/portfolio/euphoria.jpg',
+        author: 'Alif Bin Saif',
+        date: 'May 15, 2025',
+        title: 'Euphoria Music App',
+        fullText: 'An Android music application offering seamless music streaming and personalized playlists. Built natively with Kotlin, it integrates with Firebase for real-time database updates and user authentication, providing a dynamic and responsive user experience.',
+        skills: {
+            languages: ['Kotlin', 'XML'],
+            database: ['Firebase Realtime Database', 'Firebase Authentication'],
+            tools: ['Android Studio', 'Git']
+        }
+    };
+
+    const projectData4 = {
+        image: 'assets/img/portfolio/AS_ACADEMY.jpg',
+        author: 'Alif Bin Saif',
+        date: 'April 5, 2025',
+        title: 'AS Academy E-Learning Platform',
+        fullText: 'A dynamic e-learning platform integrating various web technologies to deliver a rich educational experience. The backend is powered by PHP, with a MySQL database managing course content, user data, and progress tracking.',
+        skills: {
+            languages: ['PHP', 'HTML5', 'CSS3', 'JavaScript'],
+            database: ['MySQL'],
+            tools: ['Visual Studio Code', 'XAMPP', 'Git']
+        }
+    };
+
+    const projectData5 = {
+        image: 'assets/img/portfolio/Library_MS.jpg',
+        author: 'Alif Bin Saif',
+        date: 'March 1, 2025',
+        title: 'Library Management System',
+        fullText: 'A comprehensive Java-based desktop application for managing library resources and operations. It allows librarians to handle book inventory, track member checkouts, and manage fines, all through a user-friendly interface.',
+        skills: {
+            languages: ['Java'],
+            database: ['MySQL'],
+            tools: ['Eclipse IDE', 'Git']
+        }
+    };
+
+    const projectData6 = {
+        image: 'assets/img/portfolio/aust_galaxy_dash.jpg',
+        author: 'Alif Bin Saif',
+        date: 'January 10, 2025',
+        title: 'AUST GALAXY DASH',
+        fullText: 'A fun and exciting 2D space shooter game built with the iGraphics library in C++. The game features dynamic enemy spawning, power-ups, and a scoring system, showcasing skills in game logic and graphical programming.',
+        skills: {
+            languages: ['C++'],
+            libraries: ['iGraphics'],
+            tools: ['Code::Blocks', 'Visual Studio']
+        }
+    };
+
+
+    // --- DOM ELEMENTS ---
     const modal = document.getElementById('project-modal');
-    const closeModalBtn = document.getElementById('close-modal-btn'); // The button is now inside the modal
-    
+    const closeModalBtn = document.getElementById('close-modal-btn');
     const modalImg = document.getElementById('modal-img');
     const modalAuthor = document.getElementById('modal-author');
     const modalDate = document.getElementById('modal-date');
     const modalTitle = document.getElementById('modal-title');
     const modalFullText = document.getElementById('modal-full-text');
+    const modalSkillsContainer = document.getElementById('modal-skills-container');
 
-    // --- FUNCTIONS (SIMPLIFIED) ---
+    // --- FUNCTIONS ---
+
+    /**
+     * Generates the HTML for the skills section based on the provided skills object.
+     * @param {object} skills - The skills object for a project.
+     * @returns {string} - The generated HTML string.
+     */
+    function generateSkillsHTML(skills) {
+        if (!skills) return '';
+
+        const createSection = (title, items, colorClass) => {
+            if (!items || items.length === 0) return '';
+            return `
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-3 text-white">${title}</h3>
+                    <div class="flex flex-wrap gap-2">
+                        ${items.map(item => `<div class="${colorClass} text-gray-900 text-sm font-medium px-3 py-1 rounded-md shadow-sm">${item}</div>`).join('')}
+                    </div>
+                </div>`;
+        };
+        
+        const languagesHTML = createSection('Languages', skills.languages, 'bg-blue-400');
+        const frameworksHTML = createSection('Frameworks/Libraries', skills.frameworks || skills.libraries, 'bg-green-400');
+        const databaseHTML = createSection('Database', skills.database, 'bg-purple-400');
+        const toolsHTML = createSection('Tools', skills.tools, 'bg-yellow-400');
+
+        return `
+            <div class="max-w-4xl mx-auto mt-8 border-t border-gray-700 pt-6">
+                <h2 class="text-2xl font-bold mb-6 text-white">Technical Skills</h2>
+                ${languagesHTML}
+                ${frameworksHTML}
+                ${databaseHTML}
+                ${toolsHTML}
+            </div>`;
+    }
+
+    /**
+     * Opens the modal and populates it with data from the selected project.
+     * @param {object} data - The project data object.
+     */
     function openModal(data) {
       modalImg.src = data.image;
       modalImg.alt = data.title;
@@ -367,27 +514,32 @@
       modalTitle.textContent = data.title;
       modalFullText.textContent = data.fullText;
       
-      // Show the modal
+      // Generate and inject the skills HTML
+      modalSkillsContainer.innerHTML = generateSkillsHTML(data.skills);
+
       modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
 
+    /**
+     * Closes the modal.
+     */
     function closeModal() {
-      // Hide the modal
       modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'auto'; // Restore background scrolling
     }
 
     // --- EVENT LISTENERS ---
     closeModalBtn.addEventListener('click', closeModal);
 
+    // Close modal if the backdrop is clicked
     modal.addEventListener('click', (e) => {
-      // This makes sure clicking on the modal content doesn't close it
       if (e.target === modal) {
         closeModal();
       }
     });
 
+    // Close modal with the Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
         closeModal();
@@ -395,15 +547,14 @@
     });
   </script>
 
-  
   <!-- Scripts -->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/jquery.slick.min.js"></script>
   <script src="assets/js/lightgallery.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/ripples.min.js"></script>
   <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
