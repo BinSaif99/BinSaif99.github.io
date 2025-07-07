@@ -1407,6 +1407,61 @@
   <!-- =================================================================== -->
 
 
+  <script>
+    // --- DATA FOR THE MODAL ---
+    const projectData = {
+      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+      author: 'Alif Bin Saif',
+      date: 'July 7, 2025',
+      title: 'Rent Buddy', // <-- Change this
+      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' // <-- Change this
+    };
+
+    // --- DOM ELEMENTS ---
+    const modal = document.getElementById('project-modal');
+    const openModalTrigger = document.getElementById('open-modal-trigger');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+
+    const modalImg = document.getElementById('modal-img');
+    const modalAuthor = document.getElementById('modal-author');
+    const modalDate = document.getElementById('modal-date');
+    const modalTitle = document.getElementById('modal-title');
+    const modalFullText = document.getElementById('modal-full-text');
+
+    // --- FUNCTIONS ---
+    function openModal(data) {
+      modalImg.src = data.image;
+      modalImg.alt = data.title;
+      modalAuthor.textContent = data.author;
+      modalDate.textContent = data.date;
+      modalTitle.textContent = data.title;
+      modalFullText.textContent = data.fullText;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // --- EVENT LISTENERS ---
+    // Note: We will add the trigger listener in the next step
+    closeModalBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  </script>
+
   <!-- Scripts -->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/jquery.slick.min.js"></script>
