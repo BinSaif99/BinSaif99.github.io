@@ -257,14 +257,49 @@
               <p class="text-sm font-medium text-gray-200">Links:</p>
               <a href="#"
                 class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-dribbble">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
-                  <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
-                  <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
+                <svg width="20" height="10" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid meet">
+                  <style>
+                    /* Animation for the pulsing dot */
+                    @keyframes pulse {
+                      0% {
+                        transform: scale(0.95);
+                        opacity: 0.7;
+                      }
+
+                      70% {
+                        transform: scale(1);
+                        opacity: 1;
+                      }
+
+                      100% {
+                        transform: scale(0.95);
+                        opacity: 0.7;
+                      }
+                    }
+
+                    .live-dot {
+                      animation: pulse 1.5s infinite;
+                    }
+                  </style>
+
+                  <!-- Background rectangle -->
+                  <rect width="120" height="44" rx="8" ry="8" fill="#374151" />
+
+                  <!-- Pulsing dot -->
+                  <circle class="live-dot" cx="24" cy="22" r="6" fill="#ffffff">
+                    <animate attributeName="r" from="6" to="6" dur="1.5s" begin="0s" repeatCount="indefinite"
+                      keyTimes="0;0.5;1" values="6;7;6" />
+                    <animate attributeName="opacity" from="1" to="1" dur="1.5s" begin="0s" repeatCount="indefinite"
+                      keyTimes="0;0.5;1" values="1;0.5;1" />
+                  </circle>
+
+                  <!-- "LIVE" text -->
+                  <text x="50" y="29" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#c82c37">
+                    LIVE
+                  </text>
                 </svg>
+
               </a>
               <a href="#"
                 class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
