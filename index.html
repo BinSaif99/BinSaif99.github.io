@@ -561,7 +561,7 @@
 
     <div class="container">
       <div class="row">
-        
+
 
         <!-- Progressbar -->
 
@@ -1334,6 +1334,79 @@
   </footer>
   <!-- End Footer Seciton -->
 
+  <!-- =================================================================== -->
+  <!-- START: MODAL CODE -->
+  <!-- =================================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
+    <!-- Modal Content -->
+    <div class="modal-content rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
+      <!-- Close Button -->
+      <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+
+      <!-- Modal Body -->
+      <div class="p-2">
+        <div class="w-full h-64 md:h-80 overflow-hidden rounded-xl">
+          <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <p>By <span id="modal-author" class="font-medium text-gray-200"></span></p>
+            <span class="mx-2">&bull;</span>
+            <p id="modal-date"></p>
+          </div>
+          <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-white mb-4"></h3>
+          <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
+
+          <!-- Social Share Buttons -->
+          <div class="flex items-center space-x-3">
+            <p class="text-sm font-medium text-gray-200">Share:</p>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-dribbble">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
+                <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
+                <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-behance">
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
+                <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
+                <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-sky-600 hover:text-white transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- =================================================================== -->
+  <!-- END: MODAL CODE -->
+  <!-- =================================================================== -->
+
+
   <!-- Scripts -->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/jquery.slick.min.js"></script>
@@ -1341,6 +1414,7 @@
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
