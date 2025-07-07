@@ -978,278 +978,304 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <style>
-        body {
-            /* Changed font-family to Alata */
-            font-family: 'Alata', sans-serif;
-        }
-        /* Simple transition for a smooth hover effect */
-        .profile-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .profile-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-        }
-        /* Custom background to match the dark theme 
-        .custom-bg {
-            /* Changed background color 
-            background-color: #232935;
-        }*/
-    </style>
-</head>
-<body>
+      body {
+        /* Changed font-family to Alata */
+        font-family: 'Alata', sans-serif;
+      }
 
-    <div class="container mx-auto px-4 py-16 sm:py-24">
+      /* Simple transition for a smooth hover effect */
+      .profile-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .profile-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.2), 0 8px 8px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Custom background to match the dark theme 
+      .custom-bg {
+        /* Changed background color 
+        background-color: #232935;
+      }*/
+    </style>
+    </head>
+
+    <body>
+
+      <div class="container mx-auto px-4 py-12 sm:py-16">
         <!-- Header Section -->
-        <div class="text-center mb-16">
-            <h1 class="text-4xl sm:text-5xl font-bold text-white leading-tight">My Competitive Programming Profiles</h1>
-            <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">A collection of my handles across various competitive programming platforms.</p>
+        <div class="text-center mb-12">
+          <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">My Competitive Programming Profiles</h1>
+          <p class="mt-3 text-base text-gray-400 max-w-xl mx-auto">A collection of my handles across various competitive
+            programming platforms.</p>
         </div>
 
         <!-- Profiles Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- LeetCode Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View LeetCode Profile">
-                <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="LeetCode Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=LeetCode';">
-                <h3 class="mt-6 text-2xl font-bold text-white">LeetCode</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- LeetCode Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View LeetCode Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="LeetCode Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=LeetCode';">
+            <h3 class="mt-4 text-xl font-bold text-white">LeetCode</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
-            <!-- Codeforces Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View Codeforces Profile">
-                <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/2560px-Codeforces_logo.svg.png" alt="Codeforces Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=Codeforces';">
-                <h3 class="mt-6 text-2xl font-bold text-white">Codeforces</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- Codeforces Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View Codeforces Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/2560px-Codeforces_logo.svg.png"
+              alt="Codeforces Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=Codeforces';">
+            <h3 class="mt-4 text-xl font-bold text-white">Codeforces</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
-            <!-- HackerRank Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View HackerRank Profile">
-                <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=HackerRank';">
-                <h3 class="mt-6 text-2xl font-bold text-white">HackerRank</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- HackerRank Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View HackerRank Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=HackerRank';">
+            <h3 class="mt-4 text-xl font-bold text-white">HackerRank</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
-            <!-- AtCoder Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View AtCoder Profile">
-                 <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://img.atcoder.jp/assets/atcoder.png" alt="AtCoder Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=AtCoder';">
-                <h3 class="mt-6 text-2xl font-bold text-white">AtCoder</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- AtCoder Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View AtCoder Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://img.atcoder.jp/assets/atcoder.png" alt="AtCoder Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=AtCoder';">
+            <h3 class="mt-4 text-xl font-bold text-white">AtCoder</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
-            <!-- GeeksforGeeks Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View GeeksforGeeks Profile">
-                <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks_logo.svg/800px-GeeksforGeeks_logo.svg.png" alt="GeeksforGeeks Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=GFG';">
-                <h3 class="mt-6 text-2xl font-bold text-white">GeeksforGeeks</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- GeeksforGeeks Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View GeeksforGeeks Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks_logo.svg/800px-GeeksforGeeks_logo.svg.png"
+              alt="GeeksforGeeks Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=GFG';">
+            <h3 class="mt-4 text-xl font-bold text-white">GeeksforGeeks</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
-            <!-- CodeChef Profile Card -->
-            <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-            <a href="#" class="profile-card block bg-gray-800 rounded-xl p-8 text-center shadow-lg" aria-label="View CodeChef Profile">
-                 <img class="w-24 h-24 mx-auto rounded-full object-contain bg-white p-2" src="https://cdn.iconscout.com/icon/free/png-256/free-codechef-3521351-2944802.png" alt="CodeChef Logo" onerror="this.onerror=null;this.src='https://placehold.co/96x96/ffffff/000000?text=CodeChef';">
-                <h3 class="mt-6 text-2xl font-bold text-white">CodeChef</h3>
-                <p class="mt-2 text-lg text-cyan-400">your_handle</p>
-            </a>
+          <!-- CodeChef Profile Card -->
+          <!-- IMPORTANT: Replace '#' with your actual profile URL -->
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            aria-label="View CodeChef Profile">
+            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-codechef-3521351-2944802.png" alt="CodeChef Logo"
+              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=CodeChef';">
+            <h3 class="mt-4 text-xl font-bold text-white">CodeChef</h3>
+            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+          </a>
 
         </div>
-    </div>
-
-</body>
-    
-  <!-- End Review Seciton -->
-
-  <!-- Start Blog Seciton -->
-  <section id="blog">
-    <div class="st-height-b100 st-height-lg-b80"></div>
-    <div class="container">
-      <div class="st-section-heading st-style1">
-        <h4 class="st-section-heading-title">Publications</h4>
-        <h2 class="st-section-heading-subtitle">Publications</h2>
       </div>
-      <div class="st-height-b25 st-height-lg-b25"></div>
-    </div>
 
-    <!-- Latest News Container -->
+    </body>
 
-    <div class="container">
-      <div class="st-slider st-style2">
-        <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
-          data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="3"
-          data-add-slides="3">
-          <div class="slick-wrapper">
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design
-                      according to you?</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good
-                      designer?</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a
-                      designer</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design
-                      according to you?</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good
-                      designer?</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-            <div class="slick-slide-in">
-              <div class="st-post-single st-style1">
-                <a href="blog-details.html" class="st-post-thumb st-zoom">
-                  <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
-                </a>
-                <div class="st-post-info">
-                  <div class="st-post-date">
-                    By:
-                    <a href="#" class="st-post-author">Admin</a>
-                    <span class="st-post-date-divider">|</span>
-                    <span class="st-post-publish-date">27-09-2020</span>
-                  </div>
-                  <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a
-                      designer</a></h4>
-                </div>
-              </div>
-            </div><!-- .slick-slide-in -->
-          </div>
-        </div><!-- .slick-container -->
-        <div class="pagination st-style1 st-flex st-hidden"></div>
-        <!-- If dont need Pagination then add class .st-hidden -->
-      </div><!-- .st-slider -->
-    </div>
-    <div class="st-height-b95 st-height-lg-b75"></div>
-  </section>
-  <!-- End Blog Seciton -->
+    <!-- End Review Seciton -->
 
-  <!-- Start Contact Seciton -->
-  <section id="contact" class="st-dark-bg">
-    <div class="st-height-b100 st-height-lg-b80"></div>
-    <div class="container">
-      <div class="st-section-heading st-style1">
-        <h4 class="st-section-heading-title">CONTACT ME</h4>
-        <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
-      </div>
-      <div class="st-height-b25 st-height-lg-b25"></div>
-    </div>
-
-    <!-- Contact Container -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h4 class="st-contact-title">Please offer a courteous Greeting✨. I look forward to hearing from you soon.</h4>
-          <div id="st-alert"></div>
-          <form action="https://formsubmit.co/03b2d0b2418c6f56731737b35ed81433" method="POST">
-            <div class="st-form-field">
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="st-form-field">
-              <input type="text" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="st-form-field">
-              <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
-            </div>
-            <div class="st-form-field">
-              <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required></textarea>
-            </div>
-            <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">Send message</button>
-          </form>
+    <!-- Start Blog Seciton -->
+    <section id="blog">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">Publications</h4>
+          <h2 class="st-section-heading-subtitle">Publications</h2>
         </div>
-        <div class="st-height-b0 st-height-lg-b30"></div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="st-height-b0 st-height-lg-b40"></div>
-          <h3 class="st-contact-title">Contact Info</h3>
-          <div class="st-contact-text">
-            Thank you for taking the time to review my contact information. If you have any questions or would like to
-            connect,
-            please don't hesitate to reach out to me via any of the social media platforms listed below.
-            I'm always eager to connect with new people and explore new opportunities.
-          </div>
-          <div class="st-contact-info-wrap">
-            <div class="st-single-contact-info">
-              <i class="fas fa-envelope"></i>
-              <div class="st-single-info-details">
-                <h4>Email</h4>
-                <a href="mailto: alifbinsaif@gmail.com" target="_blank">alifbinsaif@gmail.com</a>
-                <!--<a href="#">info@support.com</a>-->
-              </div>
+      <!-- Latest News Container -->
+
+      <div class="container">
+        <div class="st-slider st-style2">
+          <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
+            data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3"
+            data-lg-slides="3" data-add-slides="3">
+            <div class="slick-wrapper">
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design
+                        according to you?</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good
+                        designer?</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a
+                        designer</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog1.jpg" class="st-zoom-in" alt="blog1">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">What are the latest trends in Graphic design
+                        according to you?</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog2.jpg" class="st-zoom-in" alt="blog2">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">What do you think makes someone a good
+                        designer?</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
+              <div class="slick-slide-in">
+                <div class="st-post-single st-style1">
+                  <a href="blog-details.html" class="st-post-thumb st-zoom">
+                    <img src="assets/img/blog/blog3.jpg" class="st-zoom-in" alt="blog3">
+                  </a>
+                  <div class="st-post-info">
+                    <div class="st-post-date">
+                      By:
+                      <a href="#" class="st-post-author">Admin</a>
+                      <span class="st-post-date-divider">|</span>
+                      <span class="st-post-publish-date">27-09-2020</span>
+                    </div>
+                    <h4 class="st-post-title"><a href="blog-details.html">Were there any mistakes you’ve made as a
+                        designer</a></h4>
+                  </div>
+                </div>
+              </div><!-- .slick-slide-in -->
             </div>
-            <!--<div class="st-single-contact-info">
+          </div><!-- .slick-container -->
+          <div class="pagination st-style1 st-flex st-hidden"></div>
+          <!-- If dont need Pagination then add class .st-hidden -->
+        </div><!-- .st-slider -->
+      </div>
+      <div class="st-height-b95 st-height-lg-b75"></div>
+    </section>
+    <!-- End Blog Seciton -->
+
+    <!-- Start Contact Seciton -->
+    <section id="contact" class="st-dark-bg">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">CONTACT ME</h4>
+          <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
+
+      <!-- Contact Container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="st-contact-title">Please offer a courteous Greeting✨. I look forward to hearing from you soon.
+            </h4>
+            <div id="st-alert"></div>
+            <form action="https://formsubmit.co/03b2d0b2418c6f56731737b35ed81433" method="POST">
+              <div class="st-form-field">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="st-form-field">
+                <input type="text" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="st-form-field">
+                <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
+              </div>
+              <div class="st-form-field">
+                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required></textarea>
+              </div>
+              <button class="st-btn st-style1 st-color1" type="submit" id="submit" name="submit">Send message</button>
+            </form>
+          </div>
+          <div class="st-height-b0 st-height-lg-b30"></div>
+
+          <div class="col-lg-6">
+            <div class="st-height-b0 st-height-lg-b40"></div>
+            <h3 class="st-contact-title">Contact Info</h3>
+            <div class="st-contact-text">
+              Thank you for taking the time to review my contact information. If you have any questions or would like to
+              connect,
+              please don't hesitate to reach out to me via any of the social media platforms listed below.
+              I'm always eager to connect with new people and explore new opportunities.
+            </div>
+            <div class="st-contact-info-wrap">
+              <div class="st-single-contact-info">
+                <i class="fas fa-envelope"></i>
+                <div class="st-single-info-details">
+                  <h4>Email</h4>
+                  <a href="mailto: alifbinsaif@gmail.com" target="_blank">alifbinsaif@gmail.com</a>
+                  <!--<a href="#">info@support.com</a>-->
+                </div>
+              </div>
+              <!--<div class="st-single-contact-info">
               <i class="fas fa-phone-alt"></i>
               <div class="st-single-info-details">
                 <h4>Phone</h4>
@@ -1257,335 +1283,336 @@
                 <span>+1 213-519-
 6</span>
               </div>-->
-          </div>
-          <div class="st-single-contact-info">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="st-single-info-details">
-              <h4>Address</h4>
-              <span>Uttara, <br>Dhaka - 1230, Bangladesh</span>
+            </div>
+            <div class="st-single-contact-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="st-single-info-details">
+                <h4>Address</h4>
+                <span>Uttara, <br>Dhaka - 1230, Bangladesh</span>
+              </div>
+            </div>
+            <div class="st-social-info">
+              <div class="st-social-text">Find Me On Social Media</div>
+              <div class="st-social-link">
+                <a href="https://www.facebook.com/binsaif99/" target="_blank" class="st-social-btn active">
+                  <span class="st-social-icon"><i class="fab fa-facebook-f"></i></span>
+                  <span class="st-icon-name">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/bin_saif99/" target="_blank" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-instagram"></i></span>
+                  <span class="st-icon-name">Instagram</span>
+                </a>
+                <a href="https://twitter.com/binnash_saif" target="_blank" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-twitter"></i></span>
+                  <span class="st-icon-name">Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com/in/binsaif99/" target="_blank" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+                  <span class="st-icon-name">LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="st-social-info">
-            <div class="st-social-text">Find Me On Social Media</div>
-            <div class="st-social-link">
-              <a href="https://www.facebook.com/binsaif99/" target="_blank" class="st-social-btn active">
-                <span class="st-social-icon"><i class="fab fa-facebook-f"></i></span>
-                <span class="st-icon-name">Facebook</span>
+        </div>
+      </div>
+      </div>
+      <div class="st-height-b100 st-height-lg-b80"></div>
+    </section>
+    <!-- End Contact Seciton -->
+
+    <!-- Start Footer Seciton -->
+    <footer>
+      <div class="container">
+        <div class="st-copyright-wrap text-center">
+          <div class="st-copyright-text">© 2025. Designed by <a href="https://binsaif99.github.io/"
+              target="_blank"><b>BinSaif</b></a>. All right reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Seciton -->
+
+    <!-- =================================================================== -->
+    <!-- START: MODAL CODE -->
+    <!-- =================================================================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
+      <!-- Modal Content -->
+      <div class="modal-content rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
+        <!-- Close Button -->
+        <button id="close-modal-btn"
+          class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+            <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path>
+            <path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path>
+            <path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+          </svg>
+        </button>
+
+        <!-- Modal Body -->
+        <div class="p-2">
+          <div class="w-full h-64 md:h-80 overflow-hidden rounded-xl">
+            <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 md:p-8">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <p>By <span id="modal-author" class="font-medium text-[#fec544]"></span></p>
+              <span class="mx-2">&bull;</span>
+              <p id="modal-date"></p>
+            </div>
+            <h3 id="modal-title" class="text-2xl md:text-3xl font-semi-bold text-white mb-4"></h3>
+            <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
+
+
+            <div id="modal-skills-container"></div>
+
+            <!-- Social Share Buttons -->
+            <div class="flex items-center space-x-3">
+              <p class="text-sm font-medium text-gray-200">Links:</p>
+              <a href="#"
+                class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300">
+                <svg width="70" height="50" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid meet">
+                  <style>
+                    /* Animation for the pulsing dot */
+                    @keyframes pulse {
+                      0% {
+                        transform: scale(0.95);
+                        opacity: 0.7;
+                      }
+
+                      70% {
+                        transform: scale(1);
+                        opacity: 1;
+                      }
+
+                      100% {
+                        transform: scale(0.95);
+                        opacity: 0.7;
+                      }
+                    }
+
+                    .live-dot {
+                      animation: pulse 1.5s infinite;
+                    }
+                  </style>
+
+                  <!-- Background rectangle -->
+                  <rect width="120" height="44" rx="8" ry="8" fill="#374151" />
+
+                  <!-- Pulsing dot -->
+                  <circle class="live-dot" cx="24" cy="22" r="6" fill="#ffffff">
+                    <animate attributeName="r" from="6" to="6" dur="1.5s" begin="0s" repeatCount="indefinite"
+                      keyTimes="0;0.5;1" values="6;7;6" />
+                    <animate attributeName="opacity" from="1" to="1" dur="1.5s" begin="0s" repeatCount="indefinite"
+                      keyTimes="0;0.5;1" values="1;0.5;1" />
+                  </circle>
+
+                  <!-- "LIVE" text -->
+                  <text x="50" y="29" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#c82c37">
+                    LIVE
+                  </text>
+                </svg>
+
               </a>
-              <a href="https://www.instagram.com/bin_saif99/" target="_blank" class="st-social-btn">
-                <span class="st-social-icon"><i class="fab fa-instagram"></i></span>
-                <span class="st-icon-name">Instagram</span>
+              <a href="#"
+                class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-behance">
+                  <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
+                  <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
+                  <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
+                </svg>
               </a>
-              <a href="https://twitter.com/binnash_saif" target="_blank" class="st-social-btn">
-                <span class="st-social-icon"><i class="fab fa-twitter"></i></span>
-                <span class="st-icon-name">Twitter</span>
-              </a>
-              <a href="https://www.linkedin.com/in/binsaif99/" target="_blank" class="st-social-btn">
-                <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
-                <span class="st-icon-name">LinkedIn</span>
+              <a href="#"
+                class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-sky-600 hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-linkedin">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="st-height-b100 st-height-lg-b80"></div>
-  </section>
-  <!-- End Contact Seciton -->
-
-  <!-- Start Footer Seciton -->
-  <footer>
-    <div class="container">
-      <div class="st-copyright-wrap text-center">
-        <div class="st-copyright-text">© 2025. Designed by <a href="https://binsaif99.github.io/"
-            target="_blank"><b>BinSaif</b></a>. All right reserved.</div>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer Seciton -->
-
-  <!-- =================================================================== -->
-  <!-- START: MODAL CODE -->
-  <!-- =================================================================== -->
-  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
-    <!-- Modal Content -->
-    <div class="modal-content rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative">
-      <!-- Close Button -->
-      <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-          <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path>
-          <path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path>
-          <path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
-        </svg>
-      </button>
-
-      <!-- Modal Body -->
-      <div class="p-2">
-        <div class="w-full h-64 md:h-80 overflow-hidden rounded-xl">
-          <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover">
-        </div>
-        <div class="p-6 md:p-8">
-          <div class="flex items-center text-sm text-gray-400 mb-3">
-            <p>By <span id="modal-author" class="font-medium text-[#fec544]"></span></p>
-            <span class="mx-2">&bull;</span>
-            <p id="modal-date"></p>
-          </div>
-          <h3 id="modal-title" class="text-2xl md:text-3xl font-semi-bold text-white mb-4"></h3>
-          <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
+    <!-- =================================================================== -->
+    <!-- END: MODAL CODE -->
+    <!-- =================================================================== -->
 
 
-          <div id="modal-skills-container"></div>
+    <script>
+      // --- DATA FOR THE MODAL ---
+      const projectData1 = {
+        image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'Rent Buddy', // <-- Change this
+        fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.',// <-- Change this
+        skills: {
+          languages: ['C#', 'HTML5', 'CSS3', 'JavaScript'],
+          frameworks: ['ASP.NET', 'Bootstrap'],
+          database: ['MSSQL'],
+          tools: ['Microsoft Visual Studio', 'Git']
+        }
+      };
 
-          <!-- Social Share Buttons -->
-          <div class="flex items-center space-x-3">
-            <p class="text-sm font-medium text-gray-200">Links:</p>
-            <a href="#"
-              class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300">
-              <svg width="70" height="50" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid meet">
-                <style>
-                  /* Animation for the pulsing dot */
-                  @keyframes pulse {
-                    0% {
-                      transform: scale(0.95);
-                      opacity: 0.7;
-                    }
+      const projectData2 = {
+        image: 'assets/img/portfolio/payroll_MS.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'Payroll Management System', // <-- Change this
+        fullText: 'A Java application developed using JavaFX and Swing for managing payroll systems.', // <-- Change this
+        skills: {
+          languages: ['Java'],
+          frameworks: ['JavaFX', 'Java Swing'],
+          database: ['MySQL'],
+          tools: ['NetBeans', ' XAMPP for localhost connectivity']
+        }
+      };
 
-                    70% {
-                      transform: scale(1);
-                      opacity: 1;
-                    }
+      const projectData3 = {
+        image: 'assets/img/portfolio/euphoria.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'Euphoria', // <-- Change this
+        fullText: 'An Android music app offering seamless music streaming and personalized playlists.', // <-- Change this
+        skills: {
+          languages: ['Kotlin', 'XML', 'Java', 'JavaFX', 'Java Swing'],
+          database: ['Firebase Realtime Database', 'Firebase Authentication'],
+          tools: ['Android Studio', 'Git']
+        }
+      };
 
-                    100% {
-                      transform: scale(0.95);
-                      opacity: 0.7;
-                    }
-                  }
+      const projectData4 = {
+        image: 'assets/img/portfolio/AS_ACADEMY.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'AS Academy', // <-- Change this
+        fullText: 'A dynamic e-learning platform integrating various web technologies.', // <-- Change this
+        skills: {
+          languages: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+          database: ['MSSQL'],
+          tools: ['Visual Studio Code', 'XAMPP', 'Git']
+        }
+      };
 
-                  .live-dot {
-                    animation: pulse 1.5s infinite;
-                  }
-                </style>
+      const projectData5 = {
+        image: 'assets/img/portfolio/Library_MS.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'Library Management System', // <-- Change this
+        fullText: 'A Java-based application for managing library resources and operations.', // <-- Change this
+        skills: {
+          languages: ['Java Swing', 'JavaFX'],
+          database: ['MySQL'],
+          tools: ['NetBeans IDE', 'Git']
+        }
+      };
 
-                <!-- Background rectangle -->
-                <rect width="120" height="44" rx="8" ry="8" fill="#374151" />
+      const projectData6 = {
+        image: 'assets/img/portfolio/aust_galaxy_dash.jpg', // <-- Change this to your project image
+        author: 'Alif Bin Saif',
+        date: 'July 7, 2025',
+        title: 'AUST GALAXY DASH', // <-- Change this
+        fullText: 'A fun and exciting game built with the Igraphics programming language.', // <-- Change this
+        skills: {
+          languages: ['C++'],
+          libraries: ['iGraphics'],
+          tools: ['Code::Blocks', 'Visual Studio']
+        }
+      };
 
-                <!-- Pulsing dot -->
-                <circle class="live-dot" cx="24" cy="22" r="6" fill="#ffffff">
-                  <animate attributeName="r" from="6" to="6" dur="1.5s" begin="0s" repeatCount="indefinite"
-                    keyTimes="0;0.5;1" values="6;7;6" />
-                  <animate attributeName="opacity" from="1" to="1" dur="1.5s" begin="0s" repeatCount="indefinite"
-                    keyTimes="0;0.5;1" values="1;0.5;1" />
-                </circle>
+      // --- DOM ELEMENTS ---
+      const modal = document.getElementById('project-modal');
+      const openModalTrigger = document.getElementById('open-modal-trigger');
+      const closeModalBtn = document.getElementById('close-modal-btn');
 
-                <!-- "LIVE" text -->
-                <text x="50" y="29" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#c82c37">
-                  LIVE
-                </text>
-              </svg>
+      const modalImg = document.getElementById('modal-img');
+      const modalAuthor = document.getElementById('modal-author');
+      const modalDate = document.getElementById('modal-date');
+      const modalTitle = document.getElementById('modal-title');
+      const modalFullText = document.getElementById('modal-full-text');
+      const modalSkillsContainer = document.getElementById('modal-skills-container');
+      /**
+           * Generates the HTML for the skills section based on the provided skills object.
+           * @param {object} skills - The skills object for a project.
+           * @returns {string} - The generated HTML string.
+           */
+      function generateSkillsHTML(skills) {
+        if (!skills) return '';
 
-            </a>
-            <a href="#"
-              class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-behance">
-                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
-                <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
-                <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
-              </svg>
-            </a>
-            <a href="#"
-              class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-sky-600 hover:text-white transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-linkedin">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect width="4" height="12" x="2" y="9" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- =================================================================== -->
-  <!-- END: MODAL CODE -->
-  <!-- =================================================================== -->
-
-
-  <script>
-    // --- DATA FOR THE MODAL ---
-    const projectData1 = {
-      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.',// <-- Change this
-      skills: {
-        languages: ['C#', 'HTML5', 'CSS3', 'JavaScript'],
-        frameworks: ['ASP.NET', 'Bootstrap'],
-        database: ['MSSQL'],
-        tools: ['Microsoft Visual Studio', 'Git']
-      }
-    };
-
-    const projectData2 = {
-      image: 'assets/img/portfolio/payroll_MS.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Payroll Management System', // <-- Change this
-      fullText: 'A Java application developed using JavaFX and Swing for managing payroll systems.', // <-- Change this
-      skills: {
-        languages: ['Java'],
-        frameworks: ['JavaFX', 'Java Swing'],
-        database: ['MySQL'],
-        tools: ['NetBeans', ' XAMPP for localhost connectivity']
-      }
-    };
-
-    const projectData3 = {
-      image: 'assets/img/portfolio/euphoria.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Euphoria', // <-- Change this
-      fullText: 'An Android music app offering seamless music streaming and personalized playlists.', // <-- Change this
-      skills: {
-        languages: ['Kotlin', 'XML', 'Java', 'JavaFX', 'Java Swing'],
-        database: ['Firebase Realtime Database', 'Firebase Authentication'],
-        tools: ['Android Studio', 'Git']
-      }
-    };
-
-    const projectData4 = {
-      image: 'assets/img/portfolio/AS_ACADEMY.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'AS Academy', // <-- Change this
-      fullText: 'A dynamic e-learning platform integrating various web technologies.', // <-- Change this
-      skills: {
-        languages: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-        database: ['MSSQL'],
-        tools: ['Visual Studio Code', 'XAMPP', 'Git']
-      }
-    };
-
-    const projectData5 = {
-      image: 'assets/img/portfolio/Library_MS.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'Library Management System', // <-- Change this
-      fullText: 'A Java-based application for managing library resources and operations.', // <-- Change this
-      skills: {
-        languages: ['Java Swing', 'JavaFX'],
-        database: ['MySQL'],
-        tools: ['NetBeans IDE', 'Git']
-      }
-    };
-
-    const projectData6 = {
-      image: 'assets/img/portfolio/aust_galaxy_dash.jpg', // <-- Change this to your project image
-      author: 'Alif Bin Saif',
-      date: 'July 7, 2025',
-      title: 'AUST GALAXY DASH', // <-- Change this
-      fullText: 'A fun and exciting game built with the Igraphics programming language.', // <-- Change this
-      skills: {
-        languages: ['C++'],
-        libraries: ['iGraphics'],
-        tools: ['Code::Blocks', 'Visual Studio']
-      }
-    };
-
-    // --- DOM ELEMENTS ---
-    const modal = document.getElementById('project-modal');
-    const openModalTrigger = document.getElementById('open-modal-trigger');
-    const closeModalBtn = document.getElementById('close-modal-btn');
-
-    const modalImg = document.getElementById('modal-img');
-    const modalAuthor = document.getElementById('modal-author');
-    const modalDate = document.getElementById('modal-date');
-    const modalTitle = document.getElementById('modal-title');
-    const modalFullText = document.getElementById('modal-full-text');
-    const modalSkillsContainer = document.getElementById('modal-skills-container');
-    /**
-         * Generates the HTML for the skills section based on the provided skills object.
-         * @param {object} skills - The skills object for a project.
-         * @returns {string} - The generated HTML string.
-         */
-    function generateSkillsHTML(skills) {
-      if (!skills) return '';
-
-      const createSection = (title, items, colorClass) => {
-        if (!items || items.length === 0) return '';
-        return `
+        const createSection = (title, items, colorClass) => {
+          if (!items || items.length === 0) return '';
+          return `
                 <div class="mb-6">
                     <h3 class="text-xl font-semi-bold mb-3 text-white">${title}</h3>
                     <div class="flex flex-wrap gap-2">
                         ${items.map(item => `<div class="${colorClass} text-gray-900 text-sm font-medium px-3 py-1 rounded-md shadow-sm">${item}</div>`).join('')}
                     </div>
                 </div>`;
-      };
+        };
 
-      const languagesHTML = createSection('Languages', skills.languages, 'bg-blue-400');
-      const frameworksHTML = createSection('Frameworks/Libraries', skills.frameworks || skills.libraries, 'bg-green-400');
-      const databaseHTML = createSection('Database', skills.database, 'bg-purple-400');
-      const toolsHTML = createSection('Tools', skills.tools, 'bg-yellow-400');
+        const languagesHTML = createSection('Languages', skills.languages, 'bg-blue-400');
+        const frameworksHTML = createSection('Frameworks/Libraries', skills.frameworks || skills.libraries, 'bg-green-400');
+        const databaseHTML = createSection('Database', skills.database, 'bg-purple-400');
+        const toolsHTML = createSection('Tools', skills.tools, 'bg-yellow-400');
 
-      return `
+        return `
             <div class="max-w-4xl mx-auto mt-8 border-t border-gray-700 pt-6">
                 ${languagesHTML}
                 ${frameworksHTML}
                 ${databaseHTML}
                 ${toolsHTML}
             </div>`;
-    }
-
-
-
-    // --- FUNCTIONS ---
-    function openModal(data) {
-      modalImg.src = data.image;
-      modalImg.alt = data.title;
-      modalAuthor.textContent = data.author;
-      modalDate.textContent = data.date;
-      modalTitle.textContent = data.title;
-      modalFullText.textContent = data.fullText;
-      modalSkillsContainer.innerHTML = generateSkillsHTML(data.skills);
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    }
-
-    // --- EVENT LISTENERS ---
-    // Note: We will add the trigger listener in the next step
-    closeModalBtn.addEventListener('click', closeModal);
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
       }
-    });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        closeModal();
+
+
+      // --- FUNCTIONS ---
+      function openModal(data) {
+        modalImg.src = data.image;
+        modalImg.alt = data.title;
+        modalAuthor.textContent = data.author;
+        modalDate.textContent = data.date;
+        modalTitle.textContent = data.title;
+        modalFullText.textContent = data.fullText;
+        modalSkillsContainer.innerHTML = generateSkillsHTML(data.skills);
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
       }
-    });
-  </script>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery-1.12.4.min.js"></script>
-  <script src="assets/js/jquery.slick.min.js"></script>
-  <script src="assets/js/lightgallery.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/particles.min.js"></script>
-  <script src="assets/js/main.js"></script>
+      function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // --- EVENT LISTENERS ---
+      // Note: We will add the trigger listener in the next step
+      closeModalBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery.slick.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
