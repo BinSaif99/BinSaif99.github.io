@@ -1583,7 +1583,7 @@ body {
     color: #fec544; /* Title color on hover */
 }
 
-/*.....CUSTOM CSS....*/
+/*.....CUSTOM CSS for icon....*/
 
 
 
@@ -1650,6 +1650,63 @@ body {
 .st-iconbox.st-style1 .st-iconbox-text {
   margin-bottom: -6px;
 }
+
+
+
+/*------------------------------------------------------------
+CUSTOM DESIGN FOR PROJECT POP UP
+-------------------------------------------------------------*/
+
+        /* Custom styles for the page and modal */
+        body {
+            /* Using Alata font from your theme */
+            font-family: 'Alata', sans-serif;
+            /* Matching the dark background from your theme */
+            background-color: #1a1a1a; 
+            color: #b0b0b0;
+        }
+        /* Style for the modal backdrop */
+        .modal-backdrop {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+        }
+        /* Animation for modal pop-up */
+        .modal-content {
+            animation: zoomIn 0.3s ease-out;
+            /* Matching the dark card background from your theme */
+            background-color: #222222;
+            border: 1px solid #333;
+        }
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        /* Button style from your theme */
+        .st-btn {
+            display: inline-block;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        .st-color1 {
+            background-color: #007bff; /* A blue accent from your theme */
+            color: #fff;
+        }
+        .st-color1:hover {
+             background-color: #0056b3;
+        }
+
+    
+
 
 /*--------------------------------------------------------------
 18. Skill
