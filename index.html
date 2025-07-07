@@ -864,7 +864,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
-              <a href="test.html" target="_blank" class="st-post-thumb st-zoom ">
+              <a href="#" id="open-modal-trigger" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData2);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/payroll_MS.jpg" alt="Payroll Management System">
 
@@ -881,7 +881,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
-              <a href="test.html" target="_blank" class="st-post-thumb st-zoom ">
+              <a href="#" id="open-modal-trigger" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData3);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/euphoria.jpg" alt="Euphoria">
 
@@ -898,7 +898,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
-              <a href="test.html" target="_blank" class="st-post-thumb st-zoom ">
+              <a href="#" id="open-modal-trigger" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData4);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/AS_ACADEMY.jpg" alt="AS Academy">
 
@@ -915,7 +915,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
-              <a href="test.html" target="_blank" class="st-post-thumb st-zoom ">
+              <a href="#" id="open-modal-trigger" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData5);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/Library_MS.jpg" alt="Library Management System">
 
@@ -932,7 +932,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
-              <a href="test.html" target="_blank" class="st-post-thumb st-zoom ">
+              <a href="#" id="open-modal-trigger" class="st-post-thumb st-zoom" onclick="event.preventDefault(); openModal(projectData6);">
                 <div class="st-portfolio st-zoom-in">
                   <img src="assets/img/portfolio/aust_galaxy_dash.jpg" alt="AUST GALAXY DASH">
 
@@ -1356,7 +1356,7 @@
         </div>
         <div class="p-6 md:p-8">
           <div class="flex items-center text-sm text-gray-400 mb-3">
-            <p>By <span id="modal-author" class="font-medium text-gray-200"></span></p>
+            <p>By <span id="modal-author" class="font-medium text-[#fec544]"></span></p>
             <span class="mx-2">&bull;</span>
             <p id="modal-date"></p>
           </div>
@@ -1422,39 +1422,39 @@
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
       title: 'Payroll Management System', // <-- Change this
-      fullText: 'A Java application developed using JavaFX and Swing for managing payrol systems.' // <-- Change this
+      fullText: 'A Java application developed using JavaFX and Swing for managing payroll systems.' // <-- Change this
     };
 
     const projectData3 = {
-      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+      image: 'assets/img/portfolio/euphoria.jpg', // <-- Change this to your project image
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
-      title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' // <-- Change this
+      title: 'Euphoria', // <-- Change this
+      fullText: 'An Android music app offering seamless music streaming and personalized playlists.' // <-- Change this
     };
 
     const projectData4 = {
-      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+      image: 'assets/img/portfolio/AS_ACADEMY.jpg', // <-- Change this to your project image
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
-      title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' // <-- Change this
+      title: 'AS Academy', // <-- Change this
+      fullText: 'A dynamic e-learning platform integrating various web technologies.' // <-- Change this
     };
 
     const projectData5 = {
-      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+      image: 'assets/img/portfolio/Library_MS.jpg', // <-- Change this to your project image
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
-      title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' // <-- Change this
+      title: 'Library Management System', // <-- Change this
+      fullText: 'A Java-based application for managing library resources and operations.' // <-- Change this
     };
 
     const projectData6 = {
-      image: 'assets/img/portfolio/rent_buddy.jpg', // <-- Change this to your project image
+      image: 'assets/img/portfolio/aust_galaxy_dash.jpg', // <-- Change this to your project image
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
-      title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' // <-- Change this
+      title: 'AUST GALAXY DASH', // <-- Change this
+      fullText: 'A fun and exciting game built with the Igraphics programming language.' // <-- Change this
     };
 
     // --- DOM ELEMENTS ---
