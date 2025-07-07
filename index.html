@@ -1527,6 +1527,7 @@
       modalDate.textContent = data.date;
       modalTitle.textContent = data.title;
       modalFullText.textContent = data.fullText;
+      modalSkillsContainer.innerHTML = generateSkillsHTML(data.skills);
       modal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
     }
