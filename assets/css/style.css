@@ -1662,8 +1662,8 @@ CUSTOM DESIGN FOR PROJECT POP UP
             /* Using Alata font from your theme */
             font-family: 'Alata', sans-serif;
             /* Matching the dark background from your theme */
-            background-color: #1a1a1a; 
-            color: #b0b0b0;
+            background-color: #0a101e; 
+            color: #e0e0e0;
         }
         /* Style for the modal backdrop */
         .modal-backdrop {
