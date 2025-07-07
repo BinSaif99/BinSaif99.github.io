@@ -1056,7 +1056,7 @@ hr {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .st-hero.st-style2 .st-hero-shape {
