@@ -1370,56 +1370,21 @@
           <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
 
 
-          <div id="modal-skills-container"></div>
-
+         <div id="modal-skills-container"></div>
+        
           <!-- Social Share Buttons -->
           <div class="flex items-center space-x-3">
             <p class="text-sm font-medium text-gray-200">Links:</p>
             <a href="#"
               class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-purple-500 hover:text-white transition-all duration-300">
-              <svg width="70" height="50" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid meet">
-                <style>
-                  /* Animation for the pulsing dot */
-                  @keyframes pulse {
-                    0% {
-                      transform: scale(0.95);
-                      opacity: 0.7;
-                    }
-
-                    70% {
-                      transform: scale(1);
-                      opacity: 1;
-                    }
-
-                    100% {
-                      transform: scale(0.95);
-                      opacity: 0.7;
-                    }
-                  }
-
-                  .live-dot {
-                    animation: pulse 1.5s infinite;
-                  }
-                </style>
-
-                <!-- Background rectangle -->
-                <rect width="120" height="44" rx="8" ry="8" fill="#374151" />
-
-                <!-- Pulsing dot -->
-                <circle class="live-dot" cx="24" cy="22" r="6" fill="#ffffff">
-                  <animate attributeName="r" from="6" to="6" dur="1.5s" begin="0s" repeatCount="indefinite"
-                    keyTimes="0;0.5;1" values="6;7;6" />
-                  <animate attributeName="opacity" from="1" to="1" dur="1.5s" begin="0s" repeatCount="indefinite"
-                    keyTimes="0;0.5;1" values="1;0.5;1" />
-                </circle>
-
-                <!-- "LIVE" text -->
-                <text x="50" y="29" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#c82c37">
-                  LIVE
-                </text>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-dribbble">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72" />
+                <path d="M2.35 15.89c4.2-1.1 6.32-2.73 8.13-6.43" />
+                <path d="M12.24 21.65c-3.46-1.52-6.14-4.86-7.5-9.42" />
               </svg>
-
             </a>
             <a href="#"
               class="w-20 h-10 flex items-center justify-center bg-gray-700 rounded-full text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
@@ -1458,7 +1423,7 @@
       author: 'Alif Bin Saif',
       date: 'July 7, 2025',
       title: 'Rent Buddy', // <-- Change this
-      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.',// <-- Change this
+      fullText: 'A smart vehicle rental system designed for tourists. This is a detailed description of my project. I used various technologies to build it, focusing on a clean user interface and robust functionality.' ,// <-- Change this
       skills: {
         languages: ['C#', 'HTML5', 'CSS3', 'JavaScript'],
         frameworks: ['ASP.NET', 'Bootstrap'],
@@ -1488,10 +1453,10 @@
       title: 'Euphoria', // <-- Change this
       fullText: 'An Android music app offering seamless music streaming and personalized playlists.', // <-- Change this
       skills: {
-        languages: ['Kotlin', 'XML', 'Java', 'JavaFX', 'Java Swing'],
-        database: ['Firebase Realtime Database', 'Firebase Authentication'],
-        tools: ['Android Studio', 'Git']
-      }
+            languages: ['Kotlin', 'XML', 'Java', 'JavaFX', 'Java Swing'],
+            database: ['Firebase Realtime Database', 'Firebase Authentication'],
+            tools: ['Android Studio', 'Git']
+        }
     };
 
     const projectData4 = {
@@ -1501,10 +1466,10 @@
       title: 'AS Academy', // <-- Change this
       fullText: 'A dynamic e-learning platform integrating various web technologies.', // <-- Change this
       skills: {
-        languages: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-        database: ['MSSQL'],
-        tools: ['Visual Studio Code', 'XAMPP', 'Git']
-      }
+            languages: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+            database: ['MSSQL'],
+            tools: ['Visual Studio Code', 'XAMPP', 'Git']
+        }
     };
 
     const projectData5 = {
@@ -1514,10 +1479,10 @@
       title: 'Library Management System', // <-- Change this
       fullText: 'A Java-based application for managing library resources and operations.', // <-- Change this
       skills: {
-        languages: ['Java Swing', 'JavaFX'],
-        database: ['MySQL'],
-        tools: ['NetBeans IDE', 'Git']
-      }
+            languages: ['Java Swing', 'JavaFX'],
+            database: ['MySQL'],
+            tools: ['NetBeans IDE', 'Git']
+        }
     };
 
     const projectData6 = {
@@ -1527,9 +1492,9 @@
       title: 'AUST GALAXY DASH', // <-- Change this
       fullText: 'A fun and exciting game built with the Igraphics programming language.', // <-- Change this
       skills: {
-        languages: ['C++'],
-        libraries: ['iGraphics'],
-        tools: ['Code::Blocks', 'Visual Studio']
+            languages: ['C++'],
+            libraries: ['iGraphics'],
+            tools: ['Code::Blocks', 'Visual Studio']
       }
     };
 
@@ -1544,31 +1509,31 @@
     const modalTitle = document.getElementById('modal-title');
     const modalFullText = document.getElementById('modal-full-text');
     const modalSkillsContainer = document.getElementById('modal-skills-container');
-    /**
-         * Generates the HTML for the skills section based on the provided skills object.
-         * @param {object} skills - The skills object for a project.
-         * @returns {string} - The generated HTML string.
-         */
-    function generateSkillsHTML(skills) {
-      if (!skills) return '';
+/**
+     * Generates the HTML for the skills section based on the provided skills object.
+     * @param {object} skills - The skills object for a project.
+     * @returns {string} - The generated HTML string.
+     */
+        function generateSkillsHTML(skills) {
+        if (!skills) return '';
 
-      const createSection = (title, items, colorClass) => {
-        if (!items || items.length === 0) return '';
-        return `
+        const createSection = (title, items, colorClass) => {
+            if (!items || items.length === 0) return '';
+            return `
                 <div class="mb-6">
                     <h3 class="text-xl font-semi-bold mb-3 text-white">${title}</h3>
                     <div class="flex flex-wrap gap-2">
                         ${items.map(item => `<div class="${colorClass} text-gray-900 text-sm font-medium px-3 py-1 rounded-md shadow-sm">${item}</div>`).join('')}
                     </div>
                 </div>`;
-      };
+        };
+        
+        const languagesHTML = createSection('Languages', skills.languages, 'bg-blue-400');
+        const frameworksHTML = createSection('Frameworks/Libraries', skills.frameworks || skills.libraries, 'bg-green-400');
+        const databaseHTML = createSection('Database', skills.database, 'bg-purple-400');
+        const toolsHTML = createSection('Tools', skills.tools, 'bg-yellow-400');
 
-      const languagesHTML = createSection('Languages', skills.languages, 'bg-blue-400');
-      const frameworksHTML = createSection('Frameworks/Libraries', skills.frameworks || skills.libraries, 'bg-green-400');
-      const databaseHTML = createSection('Database', skills.database, 'bg-purple-400');
-      const toolsHTML = createSection('Tools', skills.tools, 'bg-yellow-400');
-
-      return `
+        return `
             <div class="max-w-4xl mx-auto mt-8 border-t border-gray-700 pt-6">
                 ${languagesHTML}
                 ${frameworksHTML}
