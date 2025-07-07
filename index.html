@@ -1521,7 +1521,7 @@
             if (!items || items.length === 0) return '';
             return `
                 <div class="mb-6">
-                    <h3 class="text-xl font-semibold mb-3 text-white">${title}</h3>
+                    <h3 class="text-xl font-semi-bold mb-3 text-white">${title}</h3>
                     <div class="flex flex-wrap gap-2">
                         ${items.map(item => `<div class="${colorClass} text-gray-900 text-sm font-medium px-3 py-1 rounded-md shadow-sm">${item}</div>`).join('')}
                     </div>
@@ -1535,7 +1535,6 @@
 
         return `
             <div class="max-w-4xl mx-auto mt-8 border-t border-gray-700 pt-6">
-                <h2 class="text-2xl font-semi-bold mb-6 text-white"></h2>
                 ${languagesHTML}
                 ${frameworksHTML}
                 ${databaseHTML}
