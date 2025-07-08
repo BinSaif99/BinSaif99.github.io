@@ -976,7 +976,6 @@
 
     <!-- Reviews Container -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <style>
       body {
         /* Changed font-family to Alata */
@@ -989,8 +988,8 @@
       }
 
       .profile-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.2), 0 8px 8px -5px rgba(0, 0, 0, 0.1);
+        transform: translateY(-6px);
+        box-shadow: 0 12px 15px -5px rgba(0, 0, 0, 0.2), 0 6px 6px -5px rgba(0, 0, 0, 0.1);
       }
 
       /* Custom background to match the dark theme 
@@ -1001,85 +1000,85 @@
     </style>
     </head>
 
-    <body>
+    <body class="custom-bg">
 
-      <div class="container mx-auto px-4 py-12 sm:py-16">
+      <div class="container mx-auto px-4 py-8 sm:py-12">
         <!-- Header Section -->
-        <div class="text-center mb-12">
-          <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">My Competitive Programming Profiles</h1>
-          <p class="mt-3 text-base text-gray-400 max-w-xl mx-auto">A collection of my handles across various competitive
+        <div class="text-center mb-10">
+          <h1 class="text-2xl sm:text-3xl font-bold text-white leading-tight">My Competitive Programming Profiles</h1>
+          <p class="mt-2 text-sm text-gray-400 max-w-md mx-auto">A collection of my handles across various competitive
             programming platforms.</p>
         </div>
 
         <!-- Profiles Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
 
           <!-- LeetCode Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View LeetCode Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="LeetCode Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=LeetCode';">
-            <h3 class="mt-4 text-xl font-bold text-white">LeetCode</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=LeetCode';">
+            <h3 class="mt-3 text-lg font-bold text-white">LeetCode</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
           <!-- Codeforces Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View Codeforces Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/2560px-Codeforces_logo.svg.png"
               alt="Codeforces Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=Codeforces';">
-            <h3 class="mt-4 text-xl font-bold text-white">Codeforces</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=Codeforces';">
+            <h3 class="mt-3 text-lg font-bold text-white">Codeforces</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
           <!-- HackerRank Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View HackerRank Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=HackerRank';">
-            <h3 class="mt-4 text-xl font-bold text-white">HackerRank</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=HackerRank';">
+            <h3 class="mt-3 text-lg font-bold text-white">HackerRank</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
           <!-- AtCoder Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View AtCoder Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://img.atcoder.jp/assets/atcoder.png" alt="AtCoder Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=AtCoder';">
-            <h3 class="mt-4 text-xl font-bold text-white">AtCoder</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=AtCoder';">
+            <h3 class="mt-3 text-lg font-bold text-white">AtCoder</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
           <!-- GeeksforGeeks Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View GeeksforGeeks Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks_logo.svg/800px-GeeksforGeeks_logo.svg.png"
               alt="GeeksforGeeks Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=GFG';">
-            <h3 class="mt-4 text-xl font-bold text-white">GeeksforGeeks</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=GFG';">
+            <h3 class="mt-3 text-lg font-bold text-white">GeeksforGeeks</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
           <!-- CodeChef Profile Card -->
           <!-- IMPORTANT: Replace '#' with your actual profile URL -->
-          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+          <a href="#" class="profile-card block bg-gray-800 rounded-xl p-4 text-center shadow-md"
             aria-label="View CodeChef Profile">
-            <img class="w-20 h-20 mx-auto rounded-full object-contain bg-white p-1.5"
+            <img class="w-16 h-16 mx-auto rounded-full object-contain bg-white p-1"
               src="https://cdn.iconscout.com/icon/free/png-256/free-codechef-3521351-2944802.png" alt="CodeChef Logo"
-              onerror="this.onerror=null;this.src='https://placehold.co/80x80/ffffff/000000?text=CodeChef';">
-            <h3 class="mt-4 text-xl font-bold text-white">CodeChef</h3>
-            <p class="mt-1 text-base text-cyan-400">your_handle</p>
+              onerror="this.onerror=null;this.src='https://placehold.co/64x64/ffffff/000000?text=CodeChef';">
+            <h3 class="mt-3 text-lg font-bold text-white">CodeChef</h3>
+            <p class="mt-0.5 text-sm text-cyan-400">your_handle</p>
           </a>
 
         </div>
