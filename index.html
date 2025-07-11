@@ -1435,8 +1435,7 @@
             </div>
             <h3 id="modal-title" class="text-2xl md:text-3xl font-semi-bold text-white mb-4"></h3>
             <p id="modal-full-text" class="text-gray-300 leading-relaxed mb-6"></p>
-
-
+            <div id="modal-links-container"></div>
             <div id="modal-skills-container"></div>
 
             <!-- Social Share Buttons -->
@@ -1653,8 +1652,9 @@
       const modalTitle = document.getElementById('modal-title');
       const modalFullText = document.getElementById('modal-full-text');
       const modalSkillsContainer = document.getElementById('modal-skills-container');
-      /* const modalLinksContainer = document.getElementById('modal-links-container'); */
+      const modalLinksContainer = document.getElementById('modal-links-container');
       /**
+          *========SKILL========= 
            * Generates the HTML for the skills section based on the provided skills object.
            * @param {object} skills - The skills object for a project.
            * @returns {string} - The generated HTML string.
@@ -1688,12 +1688,12 @@
       }
 
           /**
-     * --- UPDATED FUNCTION ---
+     * ====== UPDATED LINK FUNCTION =======
      * Generates the HTML for the project links as buttons with icons and text.
      * @param {object} links - The links object for a project.
      * @returns {string} - The generated HTML string for the links.
      */
-   /*  function generateLinksHTML(links) {
+    function generateLinksHTML(links) {
             if (!links) return '';
 
             const liveIcon = `<svg class="w-4 h-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="currentColor"/></svg>`;
@@ -1710,7 +1710,7 @@
 
             // Corrected font-semi-bold to font-semibold
             return `<div class="flex items-center gap-4 mt-6"><h3 class="text-xl font-semibold text-white">Links:</h3><div class="flex flex-wrap items-center gap-3">${linkItems.join('')}</div></div>`;
-        } */
+        } 
 
 
       // --- FUNCTIONS ---
@@ -1722,7 +1722,7 @@
         modalTitle.textContent = data.title;
         modalFullText.textContent = data.fullText;
         modalSkillsContainer.innerHTML = generateSkillsHTML(data.skills);
-       /*  modalLinksContainer.innerHTML = generateLinksHTML(data.links); */
+        modalLinksContainer.innerHTML = generateLinksHTML(data.links); 
         
         modal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
