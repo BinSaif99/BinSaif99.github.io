@@ -1,0 +1,9 @@
+[build]
+  publish = "public"       # change if your build folder is different
+  command = "npm install && npm run build"  # adjust build command if needed
+
+[build.environment]
+  NODE_VERSION = "18"
+  PYTHON_VERSION = "3.10"
+  NPM_FLAGS = "--legacy-peer-deps"
+
